@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+<h2>All Expenses</h2>
+
+{% if expenses %}
+
+<table border="1">
+    <tr>
+        <th>Amount</th>
+        <th>Category</th>
+        <th>Date</th>
+    </tr>
+
+    {% for expense in expenses %}
+    <tr>
+        <td>{{ expense.amount }}</td>
+        <td>{{ expense.category }}</td>
+        <td>{{ expense.date }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+<br>
+<form action="{{ url_for('view_expenses') }}" method="GET">
+    <input type="text" name="category" placeholder="Enter category">
+    <button type="submit">Filter</button>
+</form>
+
+<h3>Total Expense: {{ total }}</h3>
+
+{% else %}
+<p>No expenses recorded yet.</p>
+{% endif %}
+
+{% endblock %}

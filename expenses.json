@@ -1,0 +1,27 @@
+[
+    {
+        "amount": 10.0,
+        "category": "Stationery",
+        "date": "2026-02-01"
+    },
+    {
+        "amount": 50.0,
+        "category": "Gifts",
+        "date": "2026-02-02"
+    },
+    {
+        "amount": 60.0,
+        "category": "Fast Food",
+        "date": "2026-02-03"
+    },
+    {
+        "amount": 77.0,
+        "category": "House Hold",
+        "date": "2026-02-05"
+    },
+    {
+        "amount": 7000.0,
+        "category": "House Rent",
+        "date": "2026-02-06"
+    }
+]
